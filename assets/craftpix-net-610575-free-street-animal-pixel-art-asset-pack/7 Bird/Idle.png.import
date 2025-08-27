@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dvqsn1vk2iq1b"
-path="res://.godot/imported/WhatsApp Image 2025-08-26 at 11.13.56_d285dd26.jpg-5f118c7406de74417752d952f818c7b2.ctex"
+uid="uid://cy65l7ok8bwxq"
+path="res://.godot/imported/Idle.png-a521a790eca6f416d89e10be9a93fb03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://WhatsApp Image 2025-08-26 at 11.13.56_d285dd26.jpg"
-dest_files=["res://.godot/imported/WhatsApp Image 2025-08-26 at 11.13.56_d285dd26.jpg-5f118c7406de74417752d952f818c7b2.ctex"]
+source_file="res://assets/craftpix-net-610575-free-street-animal-pixel-art-asset-pack/7 Bird/Idle.png"
+dest_files=["res://.godot/imported/Idle.png-a521a790eca6f416d89e10be9a93fb03.ctex"]
 
 [params]
 

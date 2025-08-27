@@ -1,4 +1,4 @@
-[gd_scene load_steps=262 format=3 uid="uid://d4npb5uxkysm"]
+[gd_scene load_steps=263 format=3 uid="uid://d4npb5uxkysm"]
 
 [ext_resource type="PackedScene" uid="uid://csbb6kkovn14r" path="res://scenes/player.tscn" id="1_mgu5x"]
 [ext_resource type="Texture2D" uid="uid://dtiea2o4h23pc" path="res://assets/craftpix-net-314143-free-industrial-zone-tileset-pixel-art/1 Tiles/IndustrialTile_01.png" id="2_wxwvu"]
@@ -130,6 +130,7 @@
 [ext_resource type="PackedScene" uid="uid://bh7xsprnvluu" path="res://scenes/board 3.tscn" id="128_p307w"]
 [ext_resource type="PackedScene" uid="uid://8ngbtmquwin5" path="res://scenes/platform.tscn" id="128_vackv"]
 [ext_resource type="PackedScene" uid="uid://dnooib8p8knki" path="res://scenes/killzone.tscn" id="130_t0wrp"]
+[ext_resource type="PackedScene" uid="uid://7a4aiwjm4hjc" path="res://scenes/dog_1.tscn" id="131_vea3b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qjylv"]
 texture = ExtResource("2_wxwvu")
@@ -1988,3 +1989,6 @@ position = Vector2(-31, 74)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="killzone"]
 shape = SubResource("WorldBoundaryShape2D_t0wrp")
+
+[node name="dog 1" parent="." instance=ExtResource("131_vea3b")]
+position = Vector2(202, -72)
