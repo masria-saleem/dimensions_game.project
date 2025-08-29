@@ -1,7 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://csbb6kkovn14r"]
+[gd_scene load_steps=21 format=3 uid="uid://csbb6kkovn14r"]
 
 [ext_resource type="Texture2D" uid="uid://dofinvrmhygby" path="res://assets/craftpix-net-856554-free-3-cyberpunk-characters-pixel-art/3 Cyborg/Cyborg_idle.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://butlinu1cqy8r" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://b4w36brq7y3lj" path="res://assets/craftpix-net-856554-free-3-cyberpunk-characters-pixel-art/3 Cyborg/Cyborg_jump.png" id="3_dqkch"]
+[ext_resource type="Texture2D" uid="uid://c8bc44yb8cc1x" path="res://assets/craftpix-net-856554-free-3-cyberpunk-characters-pixel-art/3 Cyborg/Cyborg_run.png" id="4_qlg0r"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("1_4flbx")
@@ -18,6 +20,46 @@ region = Rect2(98, 4, 38, 44)
 [sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
 atlas = ExtResource("1_4flbx")
 region = Rect2(146, 4, 38, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
+atlas = ExtResource("3_dqkch")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
+atlas = ExtResource("3_dqkch")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
+atlas = ExtResource("3_dqkch")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ur7pv"]
+atlas = ExtResource("3_dqkch")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4r1p"]
+atlas = ExtResource("4_qlg0r")
+region = Rect2(0, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
+atlas = ExtResource("4_qlg0r")
+region = Rect2(48, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3v2ag"]
+atlas = ExtResource("4_qlg0r")
+region = Rect2(96, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jej6c"]
+atlas = ExtResource("4_qlg0r")
+region = Rect2(144, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ej7"]
+atlas = ExtResource("4_qlg0r")
+region = Rect2(192, 0, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oprun"]
+atlas = ExtResource("4_qlg0r")
+region = Rect2(240, 0, 48, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2hs0m"]
 animations = [{
@@ -37,6 +79,46 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tuyoq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fjrip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_smehm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ur7pv")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4r1p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2wvv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3v2ag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jej6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1ej7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oprun")
+}],
+"loop": true,
+"name": &"run",
+"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1jxqw"]
@@ -49,10 +131,8 @@ script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_2hs0m")
-animation = &"idle"
+animation = &"run"
 autoplay = "idle"
-frame = 2
-frame_progress = 0.0138984
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-8, 5)
